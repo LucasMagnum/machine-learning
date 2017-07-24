@@ -7,7 +7,11 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Data.csv')
+
+# independent variables, variables used to get the result
 X = dataset.iloc[:, :-1].values
+
+# dependent variable, result
 y = dataset.iloc[:, 3].values
 
 # Splitting the dataset into the Training set and Test set
